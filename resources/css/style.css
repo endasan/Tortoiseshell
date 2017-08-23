@@ -1,0 +1,252 @@
+html{
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+
+}
+
+body{
+  line-height: 1.4;
+  background-color: azure;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.banner {
+  height: 30rem;
+  width: 100%;
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.logo_and_title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 1rem;
+}
+
+nav.small{
+  display: none;
+}
+
+header nav a {
+  padding-left: 2rem;
+}
+
+.headline {
+  margin-top: 10rem;
+  text-align: right;
+}
+
+.headline span {
+  display: inline-block;
+  background-color: azure;
+  color: black;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  left: 2rem;
+}
+
+.advantages {
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.advantage {
+  max-width: 5rem;
+  height: 8rem;
+  width: auto;
+  margin: 0 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantage .paper {
+  width: 3.5rem;
+  height: auto;
+}
+
+.advantage .ruler, .truck {
+  width: 5rem;
+  height: auto;
+}
+
+.advantage .title {
+  text-align: center;
+  line-height: 1.4;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.content_item{
+  width: 35%;
+  padding: 0 2.5%;
+}
+
+.content_item h2 {
+  max-width: 10rem;
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.content_item p{
+  padding-top: 1rem;
+}
+
+footer .logo_and_title {
+  margin: 4rem;
+}
+
+@media only screen and (max-width: 960px){
+  .banner {
+    height: 22rem;
+  }
+
+  .header {
+    padding-top: 0;
+  }
+
+  .headline {
+    margin-top: 5rem;
+  }
+
+  .headline span {
+    padding: 1rem 4rem;
+    font-size: 1.33rem;
+    left: -2rem;
+  }
+}
+
+@media only screen and (max-width: 670px){
+  nav.big{
+    display:none;
+  }
+  nav.small{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .logo_and_title span {
+    display: none;
+  }
+
+  .headline {
+    margin-top: 9rem;
+  }
+
+  .headline span {
+    width: 100%;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    position: static;
+    text-align: center;
+  }
+
+  .advantages {
+    padding: 3.77rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantage {
+    margin-bottom: 1.54rem;
+  }
+
+  .advantage .title{
+    font-size: 0.77rem;
+  }
+
+  .middle {
+    height: 6rem;
+  }
+
+  .last {
+    height: 5rem;
+    margin-bottom: 0px;
+  }
+
+  .content{
+    flex-direction: column;
+  }
+
+  .content_item {
+    width: 100%;
+    padding: 0;
+  }
+
+  .philosophy {
+    margin-bottom: 3rem;
+  }
+
+  .content_item h2 {
+    max-width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .content_item p{
+    font-size: 0.77rem;
+    padding: 1rem 0.5rem;
+  }
+
+  footer .logo_and_title {
+    justify-content: center;
+  }
+
+  footer .logo {
+    padding-right: 0;
+  }
+}
